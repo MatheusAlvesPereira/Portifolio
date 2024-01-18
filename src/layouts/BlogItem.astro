@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from "astro:content";
+import HeroImage from "@components/blog/HeroImage.astro";
+import Layout from "@layouts/Layout.astro";
+import Title from "@src/components/blog/BlogHeader.astro";
+import Comments from "@src/components/blog/Comments.astro";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props as Props;
+---
+
+<Layout title={title} description={description}>
+	<article class="pt-16">
+		<div class="w-full px-4">
+			{heroImage && <HeroImage class="mx-auto block rounded-lg shadow-md" width={1020} height={510} src={heroImage} alt={title} />}
+		</div>
+		<div class="prose mx-auto max-w-screen-md space-y-4 px-4">
+			<div class="space-y-4 text-center">
+				<Title pubDate={pubDate} updatedDate={updatedDate} name={`title-${title}`} class="m-0 mb-2">{title}</Title>
+				<hr />
+			</div>
+			<slot />
+			<Comments />
+		</div>
+	</article>
+</Layout>

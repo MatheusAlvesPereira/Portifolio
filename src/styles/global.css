@@ -1,0 +1,20 @@
+/*
+  Place global styles here.
+ */
+
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	@apply box-border;
+}
+
+html {
+	scrollbar-gutter: stable;
+}
+
+body {
+	@apply m-0 bg-stone-50 p-0 text-stone-800 transition-all duration-300 dark:bg-stone-800 dark:text-stone-50;
+}

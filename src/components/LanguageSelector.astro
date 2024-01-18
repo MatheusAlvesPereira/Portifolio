@@ -1,0 +1,38 @@
+---
+import { LOCALES, DEFAULT_LOCALE } from "@src/consts";
+import { getLocale, getUrlWithoutLocale } from "astro-i18n-aut";
+
+const currentLocale = getLocale(Astro.url) ?? DEFAULT_LOCALE;
+const locales = Object.values(LOCALES);
+
+const urlWithoutLocalePrefix = getUrlWithoutLocale(Astro.url);
+---
+
+<script>
+	import { navigate } from "astro:transitions/client";
+	import Alpine from "alpinejs";
+
+	document.addEventListener("alpine:init", () => {
+		Alpine.data("dropdownData", () => ({
+			currentLocale: "${currentLocale}",
+			changePage(event: any) {
+				const newLocaleUrl = event.target.value;
+				navigate(newLocaleUrl);
+			},
+		}));
+	});
+</script>
+
+<select
+	aria-label="Change language"
+	class="cursor-pointer focus-visible:outline-none dark:bg-stone-800 dark:text-stone-50"
+	x-data="dropdownData"
+	x-on:change="changePage($event)">
+	{
+		locales.map((locale) => (
+			<option value={`/${locale}${urlWithoutLocalePrefix}`} selected={locale === currentLocale}>
+				{locale}
+			</option>
+		))
+	}
+</select>

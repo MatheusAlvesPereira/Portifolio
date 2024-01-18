@@ -1,0 +1,24 @@
+---
+import { getLocale } from "astro-i18n-aut";
+
+const locale = getLocale(Astro.url);
+
+interface Props {
+	date: Date;
+	includeTime?: boolean;
+}
+
+const { date, includeTime } = Astro.props;
+---
+
+<time datetime={date.toISOString()}>
+	{
+		date.toLocaleDateString(locale, {
+			year: "numeric",
+			month: "short",
+			day: "numeric",
+			hour: includeTime ? "numeric" : undefined,
+			minute: includeTime ? "numeric" : undefined,
+		})
+	}
+</time>

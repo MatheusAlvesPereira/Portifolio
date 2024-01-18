@@ -1,0 +1,61 @@
+{
+	"name": "create-astro-starter",
+	"type": "module",
+	"version": "0.13.4",
+	"author": "Giulio Zanchetta",
+	"description": "Astro starter template with tailwind, alpinejs, localization, blog, CMS, and comments",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zankhq/astro-starter.git"
+	},
+	"bugs": "https://github.com/zankhq/astro-starter/issues",
+	"homepage": "https://github.com/zankhq/astro-starter",
+	"files": [
+		"*"
+	],
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "npm run pwa:generate-assets && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"pwa:generate-assets": "pwa-assets-generator --preset minimal public/logo.svg"
+	},
+	"dependencies": {
+		"@astrojs/alpinejs": "^0.3.1",
+		"@astrojs/cloudflare": "^8.0.0",
+		"@astrojs/mdx": "^2.0.0",
+		"@astrojs/rss": "^4.0.1",
+		"@astrojs/sitemap": "^3.0.3",
+		"@astrojs/tailwind": "^5.0.3",
+		"@fontsource-variable/inter": "^5.0.16",
+		"@types/alpinejs": "^3.13.5",
+		"alpinejs": "^3.13.3",
+		"astro": "^4.0.3",
+		"astro-i18n-aut": "^0.5.0",
+		"astro-sveltia-cms": "^0.0.10",
+		"sharp": "^0.33.0",
+		"tailwindcss": "^3.3.6",
+		"workbox-window": "^7.0.0"
+	},
+	"devDependencies": {
+		"@vite-pwa/assets-generator": "^0.0.11",
+		"astro-icon": "^0.8.2",
+		"astro-seo": "^0.8.0",
+		"prettier": "^3.1.0",
+		"prettier-plugin-astro": "^0.12.2",
+		"prettier-plugin-tailwindcss": "^0.5.9"
+	},
+	"prettier": {
+		"tabWidth": 4,
+		"useTabs": true,
+		"bracketSameLine": true,
+		"printWidth": 150,
+		"htmlWhitespaceSensitivity": "ignore",
+		"plugins": [
+			"prettier-plugin-astro",
+			"prettier-plugin-tailwindcss"
+		]
+	}
+}
