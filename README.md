@@ -6,7 +6,7 @@
 $ git clone https://github.com/MatheusAlvesPereira/Portifolio.git
 ```
 
-2. run `pnpm install`
+2. run `pnpm install` or `npm install` 
 3. If you want to switch to npm make sure to remove pnpm-lock.yaml and node_modules folder and then run `npm install`
 
 All commands are run from the root of the project, from a terminal:
