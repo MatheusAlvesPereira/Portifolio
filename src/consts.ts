@@ -3,7 +3,7 @@
 
 // Website metadata
 export const SITE_URL: string = "https://astrostarter.zank.studio";
-export const SITE_TITLE: string = "Astro Blog";
+export const SITE_TITLE: string = "Portifolio";
 export const SITE_DESCRIPTION: string = "Welcome to my website!";
 
 // SEO metadata
@@ -18,15 +18,15 @@ type Page = {
 
 export const PAGES: Page[] = [
 	{
-		title: "Home",
+		title: "about",
 		href: "/",
 	},
 	{
-		title: "Blog",
+		title: "projects",
 		href: "/blog",
 	},
 	{
-		title: "About",
+		title: "follow-me",
 		href: "/about",
 	},
 ];
