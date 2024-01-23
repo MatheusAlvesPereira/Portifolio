@@ -1,8 +1,8 @@
 ---
-title: Markdown Style Guide
+title: Muniz Auto Center
 description: Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 pubDate: Jul 01 2022
-heroImage: "@assets/images/blog/blog-placeholder-1.jpg"
+heroImage: "@assets/images/blog/munizautocenterimg.png"
 ---
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 

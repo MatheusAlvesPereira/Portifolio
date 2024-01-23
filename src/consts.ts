@@ -3,7 +3,7 @@
 
 // Website metadata
 export const SITE_URL: string = "https://astrostarter.zank.studio";
-export const SITE_TITLE: string = "Portifolio";
+export const SITE_TITLE: string = "Matheus Alves";
 export const SITE_DESCRIPTION: string = "Welcome to my website!";
 
 // SEO metadata
