@@ -1,6 +1,5 @@
 ---
 import HeaderLink from "@components/Link.astro";
-import LanguageSelector from "@components/LanguageSelector.astro";
 import { localizePath } from "@utils/t.ts";
 import ThemeSelector from "@components/ThemeSelector.astro";
 import { SITE_TITLE, PAGES } from "@src/consts";
@@ -107,9 +106,5 @@ const url = Astro.url;
 			}
 		</div>
 		<ThemeSelector />
-		<LanguageSelector
-			showFlag={false}
-			class="appearance-none cursor-pointer pl-3 pr-2 py-1.5 rounded-md dark:bg-stone-950 dark:text-white focus-visible:outline-none"
-		/>
 	</nav>
 </header>
