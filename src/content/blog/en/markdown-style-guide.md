@@ -5,7 +5,7 @@ pubDate: Jul 01 2022
 heroImage: "@assets/images/blog/munizautocenterimg.png"
 ---
 
-[Muniz Auto center website link](https://guarulhos.munizautocenter.com.br/)
+[---> Muniz Auto center website link <---](https://guarulhos.munizautocenter.com.br/)
 
 Setor
 Manutenção e reparação de veículos automotores <br>
