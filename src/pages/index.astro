@@ -3,7 +3,6 @@
 import translations from "@utils/t.ts";
 import Layout from "@layouts/Layout.astro";
 import Container from "@src/components/Container.astro";
-import Referenceimg from "@assets/images/imgabout.png"
 
 const t = translations(Astro.url);
 ---
@@ -11,5 +10,20 @@ const t = translations(Astro.url);
 <Layout>
 	<Container class="pt-16">
 		<span set:html={t.home_description} />
+		<p>
+			Bem-vindo ao meu mundo digital! Sou [Seu Nome], um entusiasta da tecnologia apaixonado por transformar ideias em realidade através do
+			desenvolvimento de software. Com uma trajetória diversificada, desde a criação de sites dinâmicos até a construção de aplicativos móveis
+			inovadores, meu objetivo é oferecer soluções que não apenas atendam, mas superem as expectativas dos meus clientes. Com [X] anos de
+			experiência no campo da programação, domino uma variedade de linguagens e frameworks, permitindo-me adaptar às necessidades específicas de
+			cada projeto. Minha abordagem centrada no usuário garante que cada produto desenvolvido não apenas funcione perfeitamente, mas também
+			ofereça uma experiência excepcional aos seus usuários finais. Além do desenvolvimento técnico, sou apaixonado por design intuitivo e
+			experiência do usuário. Acredito que a combinação perfeita entre funcionalidade e estética é essencial para o sucesso de qualquer projeto
+			digital. É por isso que me esforço para criar produtos que não apenas impressionem visualmente, mas também sejam eficientes e fáceis de
+			usar. Ao longo da minha carreira, tive o privilégio de trabalhar com uma variedade de clientes, desde startups promissoras até grandes
+			empresas estabelecidas. Cada projeto me proporcionou a oportunidade de aprender e crescer, aprimorando minhas habilidades e ampliando meu
+			conhecimento. Este portfólio é uma amostra do meu trabalho e do meu compromisso com a excelência. Estou sempre aberto a novos desafios e
+			oportunidades de colaboração. Se você está procurando um parceiro confiável para transformar sua visão em realidade digital, entre em
+			contato. Estou ansioso para trabalhar juntos e criar algo extraordinário!
+		</p>
 	</Container>
 </Layout>
