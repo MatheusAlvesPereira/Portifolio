@@ -13,8 +13,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 16.x ]
-        pnpm-version: [ 8.0.0 ]
+        node-version: [14.x, 16.x, 18.x ]
+        npm-version: [ 10.2.3 ]
     name: Use Node.js ${{ matrix.node-version }}
     steps:
     
@@ -26,11 +26,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     
-    - name: Setup Pnpm
+    - name: Setup npm
       uses: pnpm/action-setup@v2
       with:
-        version: ${{matrix.pnpm-version}}
+        version: ${{matrix.npm-version}}
 
-    - name: Install Pnpm
-      run: pnpm install
+    - name: Install npm
+      run: npm install
     
