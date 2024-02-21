@@ -1,0 +1,18 @@
+---
+import translations from "@utils/t.ts";
+import Layout from "@layouts/Layout.astro";
+import Container from "@src/components/Container.astro";
+
+const t = translations(Astro.url);
+---
+
+<Layout title="Dowload" description="Lorem ipsum dolor sit amet">
+	<Container class="pt-16">
+		<br>
+		<a target="_blank" href="https://www.linkedin.com/in/matheus-alves-4a2b03231/">---> Linkedin <---</a>
+		<br>
+		<a target="_blank" href="https://github.com/MatheusAlvesPereira">---> Github <---</a>
+		<br>
+		<a target="_blank" href="https://www.youtube.com/channel/UCPPB069CYzi2BAnHU462VYg">--->  Youtube <---</a>
+	</Container>
+</Layout>
