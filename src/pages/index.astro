@@ -1,15 +1,21 @@
 ---
-// import translations
 import translations from "@utils/t.ts";
 import Layout from "@layouts/Layout.astro";
 import Container from "@src/components/Container.astro";
+
+import { Image } from "astro:assets";
+import bannerimg from '../assets/images/bannerimg.png'
+import contributingimg from '../assets/images/contributingimg.png'
+import imgfigma from '../assets/images/imgux.png'
 
 const t = translations(Astro.url);
 ---
 
 <Layout>
 	<Container class="pt-16">
-		<img src="src/assets/images/bannerimg.png" alt="imgpersonalbanner"/>
+		<Image src={bannerimg} alt="imgpersonalbanner"
+		format="avif" quality={"mid"}
+		/>
 		<br/>
 
 		<p>
@@ -24,7 +30,11 @@ const t = translations(Astro.url);
 			ofereça uma experiência excepcional aos seus usuários finais.
 			<br/>
 			<br/>
-			<img src="src/assets/images/contributingimg.png" alt="imgcontributingbanner"/>
+
+			<Image src={contributingimg} alt="imgcontributingbanner"
+			format="avif" quality={"mid"}
+			/>
+			
 			<br/>
 			Além do desenvolvimento técnico, sou apaixonado por design intuitivo e
 			experiência do usuário. Acredito que a combinação perfeita entre funcionalidade e estética é essencial para o sucesso de qualquer projeto
@@ -32,7 +42,11 @@ const t = translations(Astro.url);
 			usar. 
 			<br/>
 			<br/>
-			<img src="src/assets/images/imgux.png" alt="imguserexperiencebanner"/>
+
+			<Image src={imgfigma} alt="figmauiexperience"
+			format="avif" quality={"mid"}
+			/>
+			
 			<br/>
 			Ao longo da minha carreira, tive o privilégio de trabalhar com uma variedade de clientes, desde startups promissoras até grandes
 			empresas estabelecidas. 
