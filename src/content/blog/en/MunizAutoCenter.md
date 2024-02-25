@@ -1,7 +1,7 @@
 ---
 title: Muniz Auto Center
 description: Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
-pubDate: Jul 01 2022
+pubDate: Jul 01 2023
 heroImage: "@assets/images/munizautocenterimg.png"
 ---
 

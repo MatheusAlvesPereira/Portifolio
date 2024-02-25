@@ -1,7 +1,7 @@
 ---
 title: Minha Cena
 description: Lorem ipsum dolor sit amet
-pubDate: Jul 15 2022
+pubDate: February 01 2023
 heroImage: "@assets/images/minhacenaorg.png"
 ---
 MinhaCena.Org

@@ -1,7 +1,7 @@
 ---
 title: Anoto App
 description: Lorem ipsum dolor sit amet
-pubDate: Jul 22 2022
+pubDate: Nov 10 2023
 heroImage: "@assets/images/anotobanner.jpg"
 ---
 [------> link to page here](https://anoto-website.vercel.app/)
