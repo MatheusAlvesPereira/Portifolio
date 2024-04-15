@@ -1,3 +1,7 @@
+<h1>Portifolio</h1>
+
+<h2>A simple portifolio web with Astro.js and deploy on Vercel</h2>
+
 ## Installation
 
 1. Clone the repository:
