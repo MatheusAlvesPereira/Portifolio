@@ -11,6 +11,8 @@ import { SEO } from "astro-seo";
 import { SITE_TITLE, SITE_DESCRIPTION, TWITTER_CREATOR } from "@src/consts";
 import { getLocale } from "astro-i18n-aut";
 
+const googleContentKey = import.meta.env.googlekey
+
 interface Props {
 	title: string;
 	description: string;
@@ -26,6 +28,8 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION, image = "/blog-place
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
+
+<meta name="google-adsense-account" content={googleContentKey}>
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
